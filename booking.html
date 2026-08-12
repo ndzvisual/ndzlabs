@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NDZ Labs — Booking System case study. Appointment management for independent beauty and tattoo businesses.">
+  <title>Appointment Management System — NDZ Labs</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Boldonse&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo">NDZ<span>Labs</span></a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html#thesis">Thesis</a></li>
+        <li><a href="index.html#idea">Core Idea</a></li>
+        <li><a href="index.html#system">System</a></li>
+        <li><a href="index.html#architecture">Architecture</a></li>
+        <li><a href="index.html#harness">Harness</a></li>
+        <li><a href="index.html#agnostic">Agnostic</a></li>
+        <li><a href="index.html#proof">Proof</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About</a></li>
+      </ul>
+      <a href="index.html#cta" class="nav__cta btn btn--cta">Start a project</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== PRODUCT HERO ========== -->
+    <section class="product-hero">
+      <div class="container">
+        <p class="product-hero__eyebrow reveal">Case Study · Product · Booking System</p>
+        <h1 class="product-hero__title reveal">Appointment Management System</h1>
+        <p class="product-hero__subtitle reveal">Appointment management tool for independent hairdressers, beauty centers and tattoo studios. MVP in active development with 5 confirmed pilot businesses.</p>
+      </div>
+    </section>
+
+    <!-- ========== ROLE ========== -->
+    <section class="role-strip">
+      <div class="container role-strip__inner">
+        <p class="role-strip__label reveal">Role</p>
+        <div class="reveal">
+          <p class="role-strip__title">Solo — Ideation, Discovery, Design &amp; Development</p>
+          <p class="role-strip__text">Single product lead covering ideation, user discovery, UX design and full-stack development. Vibe-coded using AI-assisted development with Opencode. Target market: independent beauty and tattoo businesses in Latin America.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== IMPACT ========== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title reveal">Project Impact</h2>
+        <div class="stats">
+          <div class="stat reveal">
+            <span class="stat__num">5</span>
+            <span class="stat__label">Pilot Businesses</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__num">50%</span>
+            <span class="stat__label">Conversion Rate</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__num">0</span>
+            <span class="stat__label">Training Required</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__num">1</span>
+            <span class="stat__label">MVP Iteration</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== THE MARKET ========== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title reveal">The Market</h2>
+        <p class="product-text reveal">The appointment management software market has a gap most solutions ignore because it's not profitable to serve. Independent hairdressers, beauty centers, tattoo studios and similar businesses need to manage bookings efficiently, but available tools are either too big for their scale or priced unjustifiably.</p>
+        <p class="product-text reveal">Large platforms offer payment systems, complex online stores and multi-branch management, but for a solo tattoo artist or a three-chair hairdresser, those aren't features — they're overhead.</p>
+      </div>
+    </section>
+
+    <!-- ========== THE PROBLEM ========== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title reveal">The Problem</h2>
+        <p class="product-text reveal">Small independent service businesses need a way to manage appointments that's quick to set up, simple to use without training and priced according to their scale. Existing solutions have too many features or are too expensive.</p>
+        <p class="product-text reveal">Most of these businesses manage bookings through Instagram DMs or WhatsApp. Some use spreadsheets. Almost none use a tool designed for their actual size.</p>
+      </div>
+    </section>
+
+    <!-- ========== DISCOVERY & INSIGHT ========== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title reveal">Discovery &amp; Insight</h2>
+        <p class="product-text reveal">Before writing any code, I reached out to about 10 independent businesses through Instagram and WhatsApp. Five responded positively and agreed to become product pilots.</p>
+        <p class="product-text reveal">The conversations confirmed that the main problem wasn't functionality but simplicity — every business had tried at least one existing tool and stopped using it because it was too complex.</p>
+        <p class="product-text reveal">The initial concept included analytics, but after talking to pilots I removed it from the MVP scope. None of them mentioned analytics as a need.</p>
+      </div>
+    </section>
+
+    <!-- ========== MVP STRATEGY ========== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title reveal">MVP Strategy</h2>
+        <p class="product-text reveal">The MVP's core principle: a business should be able to log in and understand the value immediately, without tutorial, onboarding flow or learning curve.</p>
+        <ul class="product-list">
+          <li class="reveal">Appointment management for a single location</li>
+          <li class="reveal">Staff management</li>
+          <li class="reveal">Customer booking flow</li>
+          <li class="reveal">Weekly view with appointment details</li>
+          <li class="reveal">Basic business profile settings</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== KEY DECISIONS & TRADE-OFFS ========== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title reveal">Key Decisions &amp; Trade-offs</h2>
+        <div class="decisions">
+          <article class="decision reveal">
+            <span class="decision__num">01</span>
+            <h3 class="decision__title">Simplicity Above All</h3>
+            <p class="decision__meta">Adoption vs Capability</p>
+            <p class="decision__text">The main problem confirmed by all pilots was complexity, not lack of features. An experience with no learning curve was prioritized over breadth of functionality.</p>
+          </article>
+          <article class="decision reveal">
+            <span class="decision__num">02</span>
+            <h3 class="decision__title">Single Branch Focus</h3>
+            <p class="decision__meta">Scope vs Scale</p>
+            <p class="decision__text">Multi-branch management isn't relevant for the target segment at this stage. Excluding it reduced complexity significantly without sacrificing value for early users.</p>
+          </article>
+          <article class="decision reveal">
+            <span class="decision__num">03</span>
+            <h3 class="decision__title">Analytics Deferred</h3>
+            <p class="decision__meta">Validation vs Assumption</p>
+            <p class="decision__text">The initial concept included analytics. Discovery conversations revealed that no pilot business considered it a need. Deferring it kept the MVP lean and focused.</p>
+          </article>
+          <article class="decision reveal">
+            <span class="decision__num">04</span>
+            <h3 class="decision__title">No Onboarding</h3>
+            <p class="decision__meta">Trust vs Assistance</p>
+            <p class="decision__text">No tutorials or onboarding flows. The product must communicate its value through the interface itself. This constraint guided every scope decision.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== IMPLEMENTATION ========== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title reveal">Implementation</h2>
+        <p class="product-text reveal">The project is being built vibe-coded end to end using AI-assisted development, following the same approach used in professional projects: structure the problem first, build after.</p>
+        <p class="product-text reveal">Project artifacts include PRD, architecture document, UX flows and AGENT.md — a reusable AI agent. The AGENT.md approach came from a lesson learned in a previous INAES project: documenting logic and architecture before code.</p>
+      </div>
+    </section>
+
+    <!-- ========== NEXT STEPS ========== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title reveal">Next Steps</h2>
+        <p class="product-text reveal">The MVP will be delivered to the 5 pilot businesses. The goal isn't to measure conversion or revenue at this stage, but to observe whether businesses can use the product independently from day one, without help, and whether appointment management actually moves from WhatsApp to the tool.</p>
+        <p class="product-text reveal">The pilot will inform the first post-launch iteration.</p>
+      </div>
+    </section>
+
+    <!-- ========== KEY LEARNINGS ========== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title reveal">Key Learnings</h2>
+        <ul class="learnings">
+          <li class="learning reveal">Simplicity is the product, not just a design principle.</li>
+          <li class="learning reveal">Discovery conversations that change scope are a sign of learning, not failure.</li>
+          <li class="learning reveal">Documenting architecture before code prevents costly errors that emerge during implementation.</li>
+          <li class="learning reveal">The right MVP scope is defined by what users confirm they need, not by what the product could do.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="section section--cta" id="cta">
+      <div class="container cta">
+        <h2 class="cta__title reveal">Have a product worth building?</h2>
+        <p class="cta__text reveal">Bring us the problem.</p>
+        <a href="mailto:fernandezfjavier@gmail.com" class="btn btn--cta btn--large reveal">Start a conversation →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p class="footer__brand">NDZ<span>Labs</span></p>
+      <p class="footer__copy">© <span id="year">2026</span> NDZ Labs. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

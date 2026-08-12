@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NDZ Labs — Research & development lab for artificial intelligence.">
+  <title>NDZ Labs — AI Research & Development</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Boldonse&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#hero" class="nav__logo">NDZ<span>Labs</span></a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#thesis">Thesis</a></li>
+        <li><a href="#idea">Core Idea</a></li>
+        <li><a href="#system">System</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#harness">Harness</a></li>
+        <li><a href="#agnostic">Agnostic</a></li>
+        <li><a href="#proof">Proof</a></li>
+        <li><a href="#loop">Loop</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why NDZ</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <a href="#cta" class="nav__cta btn btn--cta">Start a project</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== 01 - HERO ========== -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <p class="hero__eyebrow reveal">NDZ LABS · INDEPENDENT R&amp;D STUDIO</p>
+        <h1 class="hero__title reveal">Building products at the speed of thought.</h1>
+        <p class="hero__subtitle reveal">NDZ Labs develops AI-native systems for turning product ideas into working software through autonomous, contract-driven development.</p>
+        <p class="hero__tags reveal"><span>LLM-agnostic.</span><span>IDE-agnostic.</span><span>Language-agnostic.</span></p>
+        <div class="hero__actions reveal">
+          <a href="#system" class="btn btn--ghost">Explore the system</a>
+          <a href="#cta" class="btn btn--cta">Build with NDZ →</a>
+        </div>
+        <p class="hero__micro reveal">From product definition to implementation, testing, recovery and release — with humans making the decisions that matter.</p>
+      </div>
+      </div>
+    </section>
+
+    <!-- ========== 02 - THE THESIS ========== -->
+    <section class="section" id="thesis">
+      <div class="container">
+        <h2 class="section__title reveal">02 — The Thesis</h2>
+        <div class="thesis">
+          <p class="thesis__lead reveal">Software development is becoming a systems problem.</p>
+          <p class="thesis__text reveal">AI has changed how quickly individual pieces of software can be produced.</p>
+          <p class="thesis__text thesis__text--emphasis reveal">But generating code is not the hard part.</p>
+          <p class="thesis__text reveal">The difficult part is maintaining product context, consistency, quality and traceability while dozens of decisions accumulate throughout development.</p>
+          <p class="thesis__text reveal">NDZ Labs explores a different approach.</p>
+          <p class="thesis__text reveal">Instead of giving AI more instructions, we give the development process stronger constraints.</p>
+          <ul class="thesis__list reveal">
+            <li>Products are defined through explicit contracts.</li>
+            <li>Specialized agents execute against those contracts.</li>
+            <li>Automated harnesses verify the results, detect failures and coordinate recovery.</li>
+          </ul>
+          <p class="thesis__text thesis__text--outcome reveal">The result is a development system designed to operate with increasing levels of autonomy without losing the context of the product being built.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 03 - THE CORE IDEA ========== -->
+    <section class="section" id="idea">
+      <div class="container">
+        <h2 class="section__title reveal">03 — The Core Idea</h2>
+        <p class="core-idea__statement reveal">
+          The unit of coordination isn't <span class="core-idea__muted">the prompt</span>. It's <span class="core-idea__accent">the contract</span>.
+        </p>
+        <div class="core-idea__compare">
+          <article class="core-idea__panel core-idea__panel--traditional reveal">
+            <h3 class="core-idea__panel-title">Traditional AI-assisted development</h3>
+            <ul class="core-idea__panel-list">
+              <li>Give an agent a task.</li>
+              <li>Give it context.</li>
+              <li>Hope it makes the right decisions.</li>
+            </ul>
+          </article>
+          <article class="core-idea__panel core-idea__panel--ndz reveal">
+            <h3 class="core-idea__panel-title">NDZ</h3>
+            <ul class="core-idea__panel-list">
+              <li>Define what must be true.</li>
+              <li>Let specialized agents execute.</li>
+              <li>Verify the result.</li>
+              <li>Only move forward when the contract is satisfied.</li>
+            </ul>
+          </article>
+        </div>
+        <p class="core-idea__closing reveal">Contracts provide the persistent layer of truth that connects product intent with implementation.</p>
+      </div>
+    </section>
+
+    <!-- ========== 04 - THE NDZ DEVELOPMENT SYSTEM ========== -->
+    <section class="section" id="system">
+      <div class="container">
+        <h2 class="section__title reveal">04 — The NDZ Development System</h2>
+        <p class="section__lede reveal">From product intent to working software.</p>
+        <div class="system-flow">
+          <p class="system-flow__intro reveal">The NDZ Development System is an agentic development environment originally built to accelerate internal product development.</p>
+          <p class="system-flow__intro reveal">It evolved into a general-purpose system for coordinating product definition, design, implementation, testing, debugging and documentation across an entire software lifecycle.</p>
+
+          <div class="system-stage-group reveal">
+            <article class="system-stage">
+              <div class="system-stage__head">
+                <span class="system-stage__num">01</span>
+                <h3 class="system-stage__title">Define</h3>
+              </div>
+              <p class="system-stage__text">A PM agent works with the product owner to turn an idea into a structured product definition.</p>
+              <ul class="system-stage__tags">
+                <li>Product requirements</li>
+                <li>Roadmap</li>
+                <li>Business rules</li>
+                <li>Acceptance criteria</li>
+                <li>Product documentation</li>
+              </ul>
+            </article>
+            <span class="system-flow__arrow" aria-hidden="true">↓</span>
+          </div>
+
+          <div class="system-stage-group reveal">
+            <article class="system-stage">
+              <div class="system-stage__head">
+                <span class="system-stage__num">02</span>
+                <h3 class="system-stage__title">Contract</h3>
+              </div>
+              <p class="system-stage__text">The system generates explicit contracts for the agents responsible for each stage.</p>
+              <ul class="system-stage__tags">
+                <li>Requirements</li>
+                <li>Boundaries</li>
+                <li>Dependencies</li>
+                <li>Expected outputs</li>
+                <li>Validation criteria</li>
+              </ul>
+            </article>
+            <span class="system-flow__arrow" aria-hidden="true">↓</span>
+          </div>
+
+          <div class="system-stage-group reveal">
+            <article class="system-stage">
+              <div class="system-stage__head">
+                <span class="system-stage__num">03</span>
+                <h3 class="system-stage__title">Build</h3>
+              </div>
+              <p class="system-stage__text">Specialized agents execute against those contracts.</p>
+              <ul class="system-stage__tags">
+                <li>Product</li>
+                <li>Design</li>
+                <li>Development</li>
+                <li>Testing</li>
+              </ul>
+            </article>
+            <span class="system-flow__arrow" aria-hidden="true">↓</span>
+          </div>
+
+          <div class="system-stage-group reveal">
+            <article class="system-stage">
+              <div class="system-stage__head">
+                <span class="system-stage__num">04</span>
+                <h3 class="system-stage__title">Verify</h3>
+              </div>
+              <p class="system-stage__text">Every stage is continuously validated against the project's requirements and contracts.</p>
+              <ul class="system-stage__tags">
+                <li>Tests</li>
+                <li>Assertions</li>
+                <li>Validation</li>
+                <li>Regression checks</li>
+              </ul>
+            </article>
+            <span class="system-flow__arrow" aria-hidden="true">↓</span>
+          </div>
+
+          <div class="system-stage-group reveal">
+            <article class="system-stage">
+              <div class="system-stage__head">
+                <span class="system-stage__num">05</span>
+                <h3 class="system-stage__title">Recover</h3>
+              </div>
+              <p class="system-stage__text">When something fails, the correction system investigates, tests hypotheses and records every attempt.</p>
+              <ul class="system-stage__tags">
+                <li>Diagnosis</li>
+                <li>Correction</li>
+                <li>Test history</li>
+                <li>Recovery</li>
+                <li>Rollback</li>
+              </ul>
+            </article>
+            <span class="system-flow__arrow" aria-hidden="true">↓</span>
+          </div>
+
+          <div class="system-stage-group reveal">
+            <article class="system-stage">
+              <div class="system-stage__head">
+                <span class="system-stage__num">06</span>
+                <h3 class="system-stage__title">Evolve</h3>
+              </div>
+              <p class="system-stage__text">Every change becomes part of the project's traceable history.</p>
+              <ul class="system-stage__tags">
+                <li>Changelog</li>
+                <li>Versions</li>
+                <li>Change requests</li>
+                <li>Business requirements</li>
+              </ul>
+            </article>
+            <span class="system-flow__arrow" aria-hidden="true">↓</span>
+          </div>
+
+          <div class="system-stage-group reveal">
+            <article class="system-stage system-stage--final">
+              <div class="system-stage__head">
+                <span class="system-stage__num">07</span>
+                <h3 class="system-stage__title">Deliver</h3>
+              </div>
+              <p class="system-stage__text">A functional MVP emerges together with the documentation and history required to understand how it was built and how it evolved.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 05 - THE AGENTIC ARCHITECTURE ========== -->
+    <section class="section" id="architecture">
+      <div class="container">
+        <h2 class="section__title reveal">05 — The Agentic Architecture</h2>
+        <p class="section__lede reveal">Autonomous by execution. Human by judgment.</p>
+        <div class="agents__intro-wrap">
+          <p class="agents__intro reveal">NDZ is designed to delegate execution without delegating responsibility blindly.</p>
+          <p class="agents__intro reveal">Specialized agents handle different parts of the development lifecycle, while human intervention remains focused on decisions where context, product judgment or architectural trade-offs matter.</p>
+        </div>
+        <div class="grid">
+          <article class="agent reveal">
+            <h3 class="agent__title">Product Agent</h3>
+            <p class="agent__text">Turns ambiguous ideas into structured product definitions and development contracts.</p>
+          </article>
+          <article class="agent reveal">
+            <h3 class="agent__title">Design Agents</h3>
+            <p class="agent__text">Translate product requirements into interfaces and design decisions aligned with the system's constraints.</p>
+          </article>
+          <article class="agent reveal">
+            <h3 class="agent__title">Development Agents</h3>
+            <p class="agent__text">Implement features against explicit contracts rather than isolated prompts.</p>
+          </article>
+          <article class="agent reveal">
+            <h3 class="agent__title">Testing Agents</h3>
+            <p class="agent__text">Continuously verify that implementation satisfies requirements and detect regressions.</p>
+          </article>
+          <article class="agent reveal">
+            <h3 class="agent__title">Correction Agent</h3>
+            <p class="agent__text">Investigates failures through controlled experiments instead of repeatedly retrying the same approach.</p>
+          </article>
+          <article class="agent reveal">
+            <h3 class="agent__title">Documentation Agents</h3>
+            <p class="agent__text">Keep product and technical documentation synchronized with the evolution of the system.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 06 - THE HARNESS LAYER ========== -->
+    <section class="section section--harness" id="harness">
+      <div class="container">
+        <h2 class="section__title reveal">06 — The Harness Layer</h2>
+        <p class="harness__lead reveal">Agents can fail. The system has to know what to do next.</p>
+        <div class="harness__intro-wrap">
+          <p class="harness__intro reveal">Autonomous execution is only useful when failure is part of the architecture.</p>
+          <p class="harness__intro reveal">NDZ uses dedicated harnesses to control how agents interact with the development process.</p>
+        </div>
+        <div class="grid harness__grid">
+          <article class="harness-card harness-card--feature reveal">
+            <h3 class="harness-card__title">Test Harnesses</h3>
+            <p class="harness-card__text">Validate implementation continuously against expected behavior.</p>
+          </article>
+          <article class="harness-card reveal">
+            <h3 class="harness-card__title">Correction Harness</h3>
+            <p class="harness-card__text">Records every debugging attempt, including hypotheses, tests, changes and outcomes.</p>
+          </article>
+          <article class="harness-card reveal">
+            <h3 class="harness-card__title">Recovery</h3>
+            <p class="harness-card__text">Failed approaches become persistent knowledge rather than disappearing into an agent's context.</p>
+          </article>
+          <article class="harness-card reveal">
+            <h3 class="harness-card__title">Rollback</h3>
+            <p class="harness-card__text">When a change cannot be safely validated, the system can return to a known state.</p>
+          </article>
+          <article class="harness-card reveal">
+            <h3 class="harness-card__title">Traceability</h3>
+            <p class="harness-card__text">Every meaningful action contributes to the project's version and change history.</p>
+          </article>
+        </div>
+        <p class="harness__statement reveal">Failure becomes system memory.</p>
+        <p class="harness__closing reveal">The correction system is designed to avoid infinite loops by remembering what has already been attempted and requiring new information before repeating a path.</p>
+      </div>
+    </section>
+
+    <!-- ========== 07 - THE AGNOSTIC LAYER ========== -->
+    <section class="section" id="agnostic">
+      <div class="container">
+        <h2 class="section__title reveal">07 — The Agnostic Layer</h2>
+        <p class="agnostic__lead reveal">The intelligence can change. <span class="agnostic__accent">The system remains.</span></p>
+        <p class="agnostic__intro reveal">NDZ does not depend on a single model, IDE or programming language.</p>
+        <div class="grid">
+          <article class="agnostic-card reveal">
+            <span class="agnostic-card__tag">LLM</span>
+            <h3 class="agnostic-card__title">LLM agnostic</h3>
+            <p class="agnostic-card__text">The development workflow is not built around a specific model provider.</p>
+            <p class="agnostic-card__text">Different models can execute different parts of the system without redefining the product process.</p>
+          </article>
+          <article class="agnostic-card reveal">
+            <span class="agnostic-card__tag">IDE</span>
+            <h3 class="agnostic-card__title">IDE agnostic</h3>
+            <p class="agnostic-card__text">The system does not depend on a particular development environment.</p>
+            <p class="agnostic-card__text">The orchestration layer lives above the tools used to write the code.</p>
+          </article>
+          <article class="agnostic-card reveal">
+            <span class="agnostic-card__tag">LANG</span>
+            <h3 class="agnostic-card__title">Language agnostic</h3>
+            <p class="agnostic-card__text">The contracts describe what the system needs to achieve, rather than prescribing a specific programming language.</p>
+            <p class="agnostic-card__text">The implementation stack can change without changing the underlying development methodology.</p>
+          </article>
+        </div>
+        <div class="agnostic-stack">
+          <div class="agnostic-stack__step reveal">Product intent</div>
+          <span class="agnostic-stack__arrow reveal" aria-hidden="true">↓</span>
+          <div class="agnostic-stack__step reveal">Contracts</div>
+          <span class="agnostic-stack__arrow reveal" aria-hidden="true">↓</span>
+          <div class="agnostic-stack__step reveal">Agent orchestration</div>
+          <span class="agnostic-stack__arrow reveal" aria-hidden="true">↓</span>
+          <div class="agnostic-stack__step agnostic-stack__step--any reveal">Any model · Any IDE · Any language</div>
+          <span class="agnostic-stack__arrow reveal" aria-hidden="true">↓</span>
+          <div class="agnostic-stack__step agnostic-stack__step--final reveal">Validated software</div>
+        </div>
+        <p class="agnostic__closing reveal"><span class="agnostic__muted">The implementation is replaceable.</span> <span class="agnostic__accent">The system of coordination is not.</span></p>
+      </div>
+    </section>
+
+    <!-- ========== 08 - FIRST PRODUCT / PROOF ========== -->
+    <section class="section" id="proof">
+      <div class="container">
+        <h2 class="section__title reveal">08 — First Product / Proof</h2>
+        <p class="proof__lead reveal">Built by building.</p>
+        <p class="proof__intro reveal">NDZ Labs validates its systems by using them to create real products.</p>
+        <div class="grid proof-grid">
+          <article class="proof-card reveal">
+            <span class="proof-card__num">01</span>
+            <h3 class="proof-card__title">Booking System</h3>
+            <p class="proof-card__text">The first complete product built through the NDZ approach.</p>
+            <p class="proof-card__text">A functional booking system developed as the first full validation of the agentic product development workflow.</p>
+            <ul class="proof-card__tags">
+              <li>Product definition</li>
+              <li>Architecture</li>
+              <li>Design</li>
+              <li>Development</li>
+              <li>Testing</li>
+              <li>Iteration</li>
+            </ul>
+            <a href="booking.html" class="btn btn--ghost">Explore the product →</a>
+          </article>
+          <article class="proof-card reveal">
+            <span class="proof-card__num">02</span>
+            <h3 class="proof-card__title">Dental Clinic OS</h3>
+            <p class="proof-card__text">A business system designed around real operational workflows.</p>
+            <p class="proof-card__text">Product architecture and development of a digital operating system for dental clinic management.</p>
+            <ul class="proof-card__tags">
+              <li>Product Architecture</li>
+              <li>Business Systems</li>
+              <li>Workflow Design</li>
+            </ul>
+            <a href="dental-os.html" class="btn btn--ghost">Explore the project →</a>
+          </article>
+        </div>
+        <article class="proof-strip reveal">
+          <h3 class="proof-strip__title">03 — More products in development</h3>
+          <p class="proof-strip__text">NDZ Labs is intentionally product-driven. New systems are built not only to ship software, but to continuously test and improve the development infrastructure itself.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== 09 - THE R&D LOOP ========== -->
+    <section class="section" id="loop">
+      <div class="container">
+        <h2 class="section__title reveal">09 — The R&amp;D Loop</h2>
+        <p class="loop__lead reveal">Build. Measure. Learn. Rebuild the system.</p>
+        <div class="loop__intro">
+          <p class="loop__intro-line reveal">Every product becomes an experiment.</p>
+          <p class="loop__intro-line reveal">Every experiment improves the system.</p>
+          <p class="loop__intro-line reveal">Every improvement changes what can be built next.</p>
+        </div>
+        <div class="rd-loop">
+          <div class="rd-loop__step rd-loop__step--build reveal">Build product</div>
+          <span class="rd-loop__arrow reveal" aria-hidden="true">↓</span>
+          <div class="rd-loop__step reveal">Observe the process</div>
+          <span class="rd-loop__arrow reveal" aria-hidden="true">↓</span>
+          <div class="rd-loop__step reveal">Identify bottlenecks</div>
+          <span class="rd-loop__arrow reveal" aria-hidden="true">↓</span>
+          <div class="rd-loop__step reveal">Improve the system</div>
+          <span class="rd-loop__arrow reveal" aria-hidden="true">↓</span>
+          <div class="rd-loop__step rd-loop__step--speed reveal">Build faster / better</div>
+          <span class="rd-loop__arrow reveal" aria-hidden="true">↓</span>
+          <div class="rd-loop__step rd-loop__step--build reveal">Next product</div>
+          <span class="rd-loop__back reveal" aria-hidden="true">↺</span>
+        </div>
+        <div class="loop__closing">
+          <p class="loop__closing-line reveal">NDZ Labs is not trying to predict what the future of software development will look like.</p>
+          <p class="loop__closing-line loop__closing-line--accent reveal">It is building it one product at a time.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 10 - SERVICES ========== -->
+    <section class="section" id="services">
+      <div class="container">
+        <h2 class="section__title reveal">10 — Services</h2>
+        <p class="service__lead reveal">Bring us a product problem.</p>
+        <p class="service__intro reveal">The same architecture and development approach used inside NDZ Labs can be applied to selected external projects.</p>
+        <div class="grid">
+          <article class="service reveal">
+            <h3 class="service__title">AI Product Architecture</h3>
+            <p class="service__tagline">Turn an idea into an executable system.</p>
+            <p class="service__text">For teams that know what they want to build but need clarity on how to build it.</p>
+            <p class="service__label">We can help with:</p>
+            <ul class="service__list">
+              <li>Product definition</li>
+              <li>AI architecture</li>
+              <li>Agent architecture</li>
+              <li>System design</li>
+              <li>Technical architecture</li>
+              <li>Data &amp; API design</li>
+              <li>MVP definition</li>
+              <li>Development roadmap</li>
+            </ul>
+            <p class="service__meta">Typical engagement: focused architecture sprint.</p>
+            <a href="#cta" class="btn btn--ghost">Discuss an architecture →</a>
+          </article>
+          <article class="service reveal">
+            <h3 class="service__title">Rapid AI MVP</h3>
+            <p class="service__tagline">From concept to working product.</p>
+            <p class="service__text">Build a focused, usable MVP without turning the first version into a six-month development project.</p>
+            <p class="service__label">We can handle:</p>
+            <ul class="service__list">
+              <li>Product architecture</li>
+              <li>UX / UI</li>
+              <li>Full-stack implementation</li>
+              <li>AI integration</li>
+              <li>Agentic workflows</li>
+              <li>Business systems</li>
+              <li>APIs &amp; integrations</li>
+              <li>Testing</li>
+              <li>Deployment</li>
+            </ul>
+            <p class="service__meta">Fast does not mean disposable.</p>
+            <a href="#cta" class="btn btn--cta">Build an MVP →</a>
+          </article>
+          <article class="service reveal">
+            <h3 class="service__title">Agentic Systems</h3>
+            <p class="service__tagline">Automate workflows, not just tasks.</p>
+            <p class="service__text">Design AI systems capable of coordinating complex workflows across tools, data and decision points.</p>
+            <p class="service__label">Examples:</p>
+            <ul class="service__list">
+              <li>Internal operations</li>
+              <li>Business automation</li>
+              <li>Research workflows</li>
+              <li>Document processing</li>
+              <li>CRM systems</li>
+              <li>AI assistants</li>
+              <li>Multi-agent workflows</li>
+              <li>Autonomous development systems</li>
+            </ul>
+            <a href="#cta" class="btn btn--ghost">Explore an agentic system →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 11 - WHY NDZ ========== -->
+    <section class="section" id="why">
+      <div class="container">
+        <h2 class="section__title reveal">11 — Why NDZ</h2>
+        <p class="why__lead reveal">Built around a different premise.</p>
+        <div class="why__list">
+          <div class="why__item reveal">
+            <h3 class="why__title">Product before technology</h3>
+            <p class="why__text">We start with the problem, not the model.</p>
+          </div>
+          <div class="why__item reveal">
+            <h3 class="why__title">Architecture before acceleration</h3>
+            <p class="why__text">Speed comes from designing the system correctly, not from skipping the thinking.</p>
+          </div>
+          <div class="why__item reveal">
+            <h3 class="why__title">Contracts over prompts</h3>
+            <p class="why__text">Persistent project constraints keep agents aligned with the product rather than the immediate task.</p>
+          </div>
+          <div class="why__item reveal">
+            <h3 class="why__title">Failure is part of the system</h3>
+            <p class="why__text">Testing, recovery and rollback are designed into the workflow.</p>
+          </div>
+          <div class="why__item reveal">
+            <h3 class="why__title">Human judgment where it matters</h3>
+            <p class="why__text">Autonomy is valuable when execution is predictable. Critical decisions remain human.</p>
+          </div>
+          <div class="why__item reveal">
+            <h3 class="why__title">Fast, but traceable</h3>
+            <p class="why__text">Every meaningful change leaves a record.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 12 - ABOUT / FOUNDER ========== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title reveal">12 — About / Founder</h2>
+        <div class="about">
+          <div class="about__copy">
+            <h3 class="about__name reveal">Built by Francisco Fernández</h3>
+            <p class="about__text reveal">Francisco is an AI Product Architect and product builder with 6+ years of experience taking digital products from definition to production.</p>
+            <p class="about__text reveal">His work sits at the intersection of product strategy, software architecture, AI and hands-on development.</p>
+            <p class="about__text reveal">NDZ Labs started as a personal R&amp;D environment to explore faster ways of building products. The development system emerged from that work — first as an internal tool, and later as a broader architecture with potential applications beyond NDZ itself.</p>
+          </div>
+          <aside class="about__card reveal">
+            <p class="about__tagline">Product thinking. Technical depth. Hands-on execution.</p>
+            <a href="#" class="btn btn--ghost">Francisco's professional portfolio →</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 13 - FINAL CTA ========== -->
+    <section class="section section--cta" id="cta">
+      <div class="container cta">
+        <h2 class="cta__title reveal">Have a product worth building?</h2>
+        <p class="cta__lead reveal">Bring us the problem.</p>
+        <p class="cta__text reveal">We'll help define the system, find the fastest path forward and build what comes next.</p>
+        <a href="mailto:fernandezfjavier@gmail.com" class="btn btn--cta btn--large reveal">Start a conversation →</a>
+        <div class="cta__foot reveal">
+          <p class="cta__brand">NDZ Labs</p>
+          <p class="cta__footline">Independent AI Product R&amp;D</p>
+          <p class="cta__footline">Buenos Aires · Working globally</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p class="footer__brand">NDZ<span>Labs</span></p>
+      <p class="footer__copy">© <span id="year">2026</span> NDZ Labs. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
