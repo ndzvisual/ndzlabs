@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AerOS Personal — A portable, declarative contract system for governing product development.">
+  <title>AerOS Personal — NDZ Labs</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Boldonse&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo">NDZ<span>Labs</span></a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#what-this-is">What This Is</a></li>
+        <li><a href="#what-it-is-not">What It Is NOT</a></li>
+        <li><a href="#structure">Structure</a></li>
+        <li><a href="#status">Status</a></li>
+        <li><a href="#governance">Governance</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#agents">Agents</a></li>
+      </ul>
+      <a href="#cta" class="nav__cta btn btn--cta">Get Started</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== PRODUCT HERO ========== -->
+    <section class="product-hero">
+      <div class="container">
+        <p class="product-hero__eyebrow reveal">NDZ DEVELOPMENT SYSTEM · CASE 01</p>
+        <h1 class="product-hero__title reveal">AerOS Personal</h1>
+        <p class="product-hero__subtitle reveal">A portable, declarative contract system for governing product development.</p>
+      </div>
+    </section>
+
+    <!-- ========== WHAT THIS IS ========== -->
+    <section class="section" id="what-this-is">
+      <div class="container">
+        <h2 class="section__title reveal">What This Is</h2>
+        <p class="product-text reveal">This is NOT a conventional software application. It is a collection of declarative artifacts — contracts, agent definitions, workflows, policies, capabilities, validators, protocols, and state definitions — that can be interpreted by a compatible execution environment (OpenCode, Codex, Claude Code, or another agentic system).</p>
+      </div>
+    </section>
+
+    <!-- ========== WHAT THIS IS NOT ========== -->
+    <section class="section" id="what-it-is-not">
+      <div class="container">
+        <h2 class="section__title reveal">What This Is NOT</h2>
+        <ul class="product-list">
+          <li class="reveal">NOT a compiled application</li>
+          <li class="reveal">NOT an LLM integration</li>
+          <li class="reveal">NOT an IDE plugin</li>
+          <li class="reveal">NOT dependent on any specific programming language, LLM, or execution environment</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== SYSTEM STRUCTURE ========== -->
+    <section class="section" id="structure">
+      <div class="container">
+        <h2 class="section__title reveal">System Structure</h2>
+        <div class="product-text reveal" style="font-family: monospace; background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 8px; line-height: 1.8;">
+          <strong>AerOS-Personal/</strong><br>
+          ├── SYSTEM.md &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# System identity and invariants<br>
+          ├── BOOTSTRAP_CONTRACT.md &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Authoritative bootstrap specification<br>
+          ├── BOOTSTRAP_EXECUTION.md &nbsp;&nbsp;&nbsp;&nbsp;# Bootstrap execution procedure<br>
+          ├── README.md<br>
+          ├── CHANGELOG.md &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Version history<br>
+          ├── kernel/<br>
+          │&nbsp;&nbsp; ├── contracts/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Contract model definitions<br>
+          │&nbsp;&nbsp; ├── protocols/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Core protocols (orchestration, validation)<br>
+          │&nbsp;&nbsp; ├── policies/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# System policies<br>
+          │&nbsp;&nbsp; └── rules/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Validation and constraint rules<br>
+          ├── agents/<br>
+          │&nbsp;&nbsp; ├── product-manager/<br>
+          │&nbsp;&nbsp; │&nbsp;&nbsp; ├── agent.yaml<br>
+          │&nbsp;&nbsp; │&nbsp;&nbsp; ├── role.md<br>
+          │&nbsp;&nbsp; │&nbsp;&nbsp; └── instructions.md<br>
+          │&nbsp;&nbsp; ├── designer/<br>
+          │&nbsp;&nbsp; ├── developer/<br>
+          │&nbsp;&nbsp; └── qa/<br>
+          ├── validators/<br>
+          │&nbsp;&nbsp; ├── schema-validator/<br>
+          │&nbsp;&nbsp; ├── contract-validator/<br>
+          │&nbsp;&nbsp; └── acceptance-validator/<br>
+          ├── workflows/<br>
+          │&nbsp;&nbsp; └── product-development/<br>
+          │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ├── workflow.yaml<br>
+          │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; └── transitions.yaml<br>
+          ├── state/<br>
+          │&nbsp;&nbsp; └── event-log/<br>
+          │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; └── events.yaml<br>
+          ├── artifacts/<br>
+          │&nbsp;&nbsp; ├── change-requests/<br>
+          │&nbsp;&nbsp; ├── decision-requests/<br>
+          │&nbsp;&nbsp; ├── product-contract/<br>
+          │&nbsp;&nbsp; ├── design-contract/<br>
+          │&nbsp;&nbsp; ├── implementation/<br>
+          │&nbsp;&nbsp; └── validation-results/<br>
+          └── docs/<br>
+          &nbsp;&nbsp;&nbsp; ├── bootstrap-completion.md<br>
+          &nbsp;&nbsp;&nbsp; ├── system-validation.md<br>
+          &nbsp;&nbsp;&nbsp; ├── workflow-simulation.md<br>
+          &nbsp;&nbsp;&nbsp; ├── audit-report.md<br>
+          &nbsp;&nbsp;&nbsp; └── production-readiness.md
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== STATUS ========== -->
+    <section class="section" id="status">
+      <div class="container">
+        <h2 class="section__title reveal">Status</h2>
+        <div class="stats">
+          <div class="stat reveal">
+            <span class="stat__num">1.0.0</span>
+            <span class="stat__label">Version</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__num">Production Ready</span>
+            <span class="stat__label">Phase</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__num">2026-08-20</span>
+            <span class="stat__label">Date</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GOVERNANCE ========== -->
+    <section class="section" id="governance">
+      <div class="container">
+        <h2 class="section__title reveal">Governance</h2>
+        <p class="product-text reveal">This system is governed by its own contracts. The execution environment (currently OpenCode) provides capabilities but has no authority over the system.</p>
+        <p class="product-text reveal" style="margin-top:1rem;"><strong>Authority hierarchy:</strong> Human → Orchestrator → Contract/Policy → Agent → Tools</p>
+      </div>
+    </section>
+
+    <!-- ========== FEATURES ========== -->
+    <section class="section" id="features">
+      <div class="container">
+        <h2 class="section__title reveal">Features</h2>
+        <div class="decisions">
+          <article class="decision reveal">
+            <span class="decision__num">01</span>
+            <h3 class="decision__title">Contract-Governed Execution</h3>
+            <p class="decision__meta">Versioned Contracts</p>
+            <p class="decision__text">All work governed by versioned contracts.</p>
+          </article>
+          <article class="decision reveal">
+            <span class="decision__num">02</span>
+            <h3 class="decision__title">Agent Non-Autonomy</h3>
+            <p class="decision__meta">Defined Roles</p>
+            <p class="decision__text">Agents execute within defined roles, no self-direction.</p>
+          </article>
+          <article class="decision reveal">
+            <span class="decision__num">03</span>
+            <h3 class="decision__title">Independent Validation</h3>
+            <p class="decision__meta">Schema · Contract · Acceptance</p>
+            <p class="decision__text">Schema, contract, and acceptance validation.</p>
+          </article>
+          <article class="decision reveal">
+            <span class="decision__num">04</span>
+            <h3 class="decision__title">Explicit Workflow</h3>
+            <p class="decision__meta">State Machine</p>
+            <p class="decision__text">State machine with Orchestrator-controlled transitions.</p>
+          </article>
+          <article class="decision reveal">
+            <span class="decision__num">05</span>
+            <h3 class="decision__title">Immutable Event Log</h3>
+            <p class="decision__meta">Full Audit Trail</p>
+            <p class="decision__text">Full audit trail for workflow reconstruction.</p>
+          </article>
+          <article class="decision reveal">
+            <span class="decision__num">06</span>
+            <h3 class="decision__title">Provenance Traceability</h3>
+            <p class="decision__meta">SOURCE · DERIVED · DECISION · UNKNOWN</p>
+            <p class="decision__text">SOURCE, DERIVED, DECISION, UNKNOWN tracking.</p>
+          </article>
+          <article class="decision reveal">
+            <span class="decision__num">07</span>
+            <h3 class="decision__title">Self-Construction</h3>
+            <p class="decision__meta">Self-Evolving</p>
+            <p class="decision__text">System evolves through same workflow it governs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== AGENTS ========== -->
+    <section class="section" id="agents">
+      <div class="container">
+        <h2 class="section__title reveal">Agents</h2>
+        <div class="stats">
+          <div class="stat reveal">
+            <span class="stat__num">PM</span>
+            <span class="stat__label">product-manager — Transforms product intention into Product Contract</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__num">UX</span>
+            <span class="stat__label">designer — Transforms Product Contract into Design Contract</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__num">DEV</span>
+            <span class="stat__label">developer — Transforms contracts into implementation</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__num">QA</span>
+            <span class="stat__label">qa — Validates implementation quality before release</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="section section--cta" id="cta">
+      <div class="container cta">
+        <h2 class="cta__title reveal">Explore the System</h2>
+        <p class="cta__text reveal">AerOS Personal is open source. Check the repo for the full system definition, contracts, agent configurations and documentation.</p>
+        <div style="margin-top:2rem;">
+          <a href="https://github.com/franfernandz/aerospersonal" target="_blank" class="btn btn--ghost btn--large reveal">Github Link →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p class="footer__brand">NDZ<span>Labs</span></p>
+      <p class="footer__copy">© <span id="year">2026</span> NDZ Labs. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
