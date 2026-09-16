@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AerOS Personal — A portable, declarative contract system for governing product development.">
+  <meta name="description" content="AerOS Personal — an experiment in whether agentic product teams can increase the amount of product exploration a human can direct.">
   <title>AerOS Personal — NDZ Labs</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,15 +19,15 @@
     <nav class="nav container" aria-label="Main navigation">
       <a href="index.html" class="nav__logo">NDZ<span>Labs</span></a>
       <ul class="nav__links" id="navLinks">
-        <li><a href="#what-this-is">What This Is</a></li>
-        <li><a href="#what-it-is-not">What It Is NOT</a></li>
-        <li><a href="#structure">Structure</a></li>
-        <li><a href="#status">Status</a></li>
-        <li><a href="#governance">Governance</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#agents">Agents</a></li>
+        <li><a href="#premise">Premise</a></li>
+        <li><a href="#product-team">The Product Team</a></li>
+        <li><a href="#human-role">Human in the Loop</a></li>
+        <li><a href="#what-broke">Where It Broke</a></li>
+        <li><a href="#productivity">Productivity Question</a></li>
+        <li><a href="#lessons">What We Learned</a></li>
+        <li><a href="#next">What's Next</a></li>
       </ul>
-      <a href="#cta" class="nav__cta btn btn--cta">Get Started</a>
+      <a href="#cta" class="nav__cta btn">Explore the System</a>
       <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
@@ -39,188 +39,285 @@
     <!-- ========== PRODUCT HERO ========== -->
     <section class="product-hero">
       <div class="container">
-        <p class="product-hero__eyebrow reveal">NDZ DEVELOPMENT SYSTEM · CASE 01</p>
+        <p class="product-hero__eyebrow reveal">NDZ LABS · EXPERIMENT · OPEN SOURCE</p>
         <h1 class="product-hero__title reveal">AerOS Personal</h1>
-        <p class="product-hero__subtitle reveal">A portable, declarative contract system for governing product development.</p>
+        <p class="product-hero__subtitle reveal">What happens when every product thinker has an entire product team at their disposal?</p>
       </div>
     </section>
 
-    <!-- ========== WHAT THIS IS ========== -->
-    <section class="section" id="what-this-is">
+    <!-- ========== THE PREMISE ========== -->
+    <section class="section" id="premise">
       <div class="container">
-        <h2 class="section__title reveal">What This Is</h2>
-        <p class="product-text reveal">This is NOT a conventional software application. It is a collection of declarative artifacts — contracts, agent definitions, workflows, policies, capabilities, validators, protocols, and state definitions — that can be interpreted by a compatible execution environment (OpenCode, Codex, Claude Code, or another agentic system).</p>
+        <h2 class="section__title reveal">The Premise</h2>
+        <p class="product-text reveal">Product development is constrained by execution capacity.</p>
+        <p class="product-text reveal">An idea can be valuable, but turning it into something tangible requires time from product managers, designers, developers and QA engineers.</p>
+        <p class="product-text reveal">That constraint shapes how teams work: ideas compete for resources, experimentation is expensive and many potentially useful directions never get explored.</p>
+        <p class="product-text reveal">AerOS started with a different question:</p>
+        <p class="statement reveal">If every member of a product team had an entire product team working alongside them, how many ideas could be explored in the time a traditional team could explore one?</p>
+        <p class="product-text reveal">AerOS Personal is an experiment around that question.</p>
       </div>
     </section>
 
-    <!-- ========== WHAT THIS IS NOT ========== -->
-    <section class="section" id="what-it-is-not">
+    <!-- ========== THE HYPOTHESIS ========== -->
+    <section class="section" id="hypothesis">
       <div class="container">
-        <h2 class="section__title reveal">What This Is NOT</h2>
+        <h2 class="section__title reveal">The Hypothesis</h2>
+        <p class="product-text reveal">The project explores whether agentic product teams can increase the amount of product exploration a human can direct without removing the human from the process.</p>
+        <p class="product-text reveal">The premise isn't that AI should decide what products to build.</p>
+        <p class="product-text reveal">Instead, AI takes responsibility for much of the execution while the human remains responsible for product direction, strategy, prioritization and judgment.</p>
+        <p class="product-text reveal">This creates a fundamental shift:</p>
+        <p class="statement reveal">The goal isn't to make humans do less product work. It's to give them more capacity to do the work that requires them.</p>
+      </div>
+    </section>
+
+    <!-- ========== FROM AerOS TO AerOS PERSONAL ========== -->
+    <section class="section" id="from-aeros">
+      <div class="container">
+        <h2 class="section__title reveal">From AerOS to AerOS Personal</h2>
+        <p class="product-text reveal">AerOS is designed as a complete, end-to-end product development team.</p>
+        <p class="product-text reveal">Its architecture includes specialized agents for:</p>
+        <div class="roles-flow reveal">
+          <span class="rd-loop__step">Product Management</span>
+          <span class="roles-flow__arrow" aria-hidden="true">→</span>
+          <span class="rd-loop__step">Design</span>
+          <span class="roles-flow__arrow" aria-hidden="true">→</span>
+          <span class="rd-loop__step">Development</span>
+          <span class="roles-flow__arrow" aria-hidden="true">→</span>
+          <span class="rd-loop__step rd-loop__step--speed">QA</span>
+        </div>
+        <p class="product-text reveal">Like Webeloper, it is declarative, contract-based and agnostic to the underlying models and technologies.</p>
+        <p class="product-text reveal">AerOS Personal isn't simply a smaller version of AerOS.</p>
+        <p class="product-text reveal">It reproduces the product-team structure while intentionally removing the kernel and bootstrap layers of the larger system.</p>
+        <p class="product-text reveal">That makes it a different system, designed for smaller products where a full AerOS deployment would be unnecessary.</p>
+      </div>
+    </section>
+
+    <!-- ========== THE PRODUCT TEAM ========== -->
+    <section class="section" id="product-team">
+      <div class="container">
+        <h2 class="section__title reveal">The Product Team</h2>
+        <p class="product-text reveal">AerOS Personal models a product team through four specialized roles.</p>
+
+        <h3 class="subheading reveal">Product Manager</h3>
+        <p class="product-text reveal">The PM is the first point of interaction.</p>
+        <p class="product-text reveal">Before development begins, the human discusses the product idea with the PM Agent.</p>
+        <p class="product-text reveal">The PM evaluates the proposal and determines whether it is worth developing.</p>
+        <p class="product-text reveal">It can recommend modifications or explicitly tell the human that an idea isn't worth the effort required to build it.</p>
+        <p class="product-text reveal">Only once the idea is considered viable does the PM create the Project Contract.</p>
+        <p class="product-text reveal">This is an intentional design choice.</p>
+        <p class="product-text reveal">The PM isn't simply an agent that translates instructions into tasks.</p>
+        <p class="product-text reveal">It is expected to behave more like an actual product manager: challenging the idea before the team spends resources building it.</p>
+
+        <h3 class="subheading reveal">Designer</h3>
+        <p class="product-text reveal">The Designer receives the project definition and translates it into a design specification through a structured contract.</p>
+        <p class="product-text reveal">Its responsibility ends when that contract is produced.</p>
+
+        <h3 class="subheading reveal">Developer</h3>
+        <p class="product-text reveal">The Developer consumes the design and project contracts and is responsible for turning them into a working product.</p>
+
+        <h3 class="subheading reveal">QA</h3>
+        <p class="product-text reveal">The QA role evaluates whether the resulting implementation behaves according to the expected requirements.</p>
+
+        <p class="product-text reveal" style="margin-top:3rem;">Together, the workflow becomes:</p>
+
+        <div class="workflow reveal">
+          <div class="system-stage">
+            <div class="system-stage__head">
+              <span class="system-stage__num">HUMAN</span>
+              <h3 class="system-stage__title">Human + PM</h3>
+            </div>
+            <p class="system-stage__text">Idea discussion and viability assessment</p>
+          </div>
+          <span class="system-flow__arrow" aria-hidden="true">↓</span>
+
+          <div class="system-stage">
+            <div class="system-stage__head">
+              <span class="system-stage__num">CONTRACT</span>
+              <h3 class="system-stage__title">Project Contract</h3>
+            </div>
+          </div>
+          <span class="system-flow__arrow" aria-hidden="true">↓</span>
+
+          <div class="system-stage">
+            <div class="system-stage__head">
+              <span class="system-stage__num">AGENT</span>
+              <h3 class="system-stage__title">Designer</h3>
+            </div>
+            <p class="system-stage__text">Design specification</p>
+          </div>
+          <span class="system-flow__arrow" aria-hidden="true">↓</span>
+
+          <div class="system-stage">
+            <div class="system-stage__head">
+              <span class="system-stage__num">CONTRACT</span>
+              <h3 class="system-stage__title">Design Contract</h3>
+            </div>
+          </div>
+          <span class="system-flow__arrow" aria-hidden="true">↓</span>
+
+          <div class="system-stage">
+            <div class="system-stage__head">
+              <span class="system-stage__num">AGENT</span>
+              <h3 class="system-stage__title">Developer</h3>
+            </div>
+            <p class="system-stage__text">Implementation</p>
+          </div>
+          <span class="system-flow__arrow" aria-hidden="true">↓</span>
+
+          <div class="system-stage system-stage--final">
+            <div class="system-stage__head">
+              <span class="system-stage__num">QA</span>
+              <h3 class="system-stage__title">QA</h3>
+            </div>
+            <p class="system-stage__text">Validation</p>
+          </div>
+        </div>
+
+        <p class="product-text reveal" style="margin-top:3rem;">The structure mirrors the responsibilities of a human product team while allowing the individual agents to execute their work independently.</p>
+      </div>
+    </section>
+
+    <!-- ========== DESIGNING THE HUMAN'S ROLE ========== -->
+    <section class="section" id="human-role">
+      <div class="container">
+        <h2 class="section__title reveal">Designing the Human's Role</h2>
+        <p class="product-text reveal">AerOS Personal deliberately keeps the human deeply involved.</p>
+        <p class="product-text reveal">The first intervention happens before development.</p>
+        <p class="product-text reveal">The human doesn't simply tell the system what to build. They discuss the idea with the PM Agent, which can challenge the premise, suggest changes or reject the project.</p>
+        <p class="product-text reveal">The second intervention happens throughout development.</p>
+        <p class="product-text reveal">Because product decisions remain human-led, the user can intervene, redirect the system and request changes at different stages.</p>
+        <p class="product-text reveal">This is fundamentally different from Webeloper.</p>
+        <p class="product-text reveal">Webeloper attempts to remove as much execution as possible from the human.</p>
+        <p class="product-text reveal">AerOS Personal does something different:</p>
+        <p class="statement reveal">It gives the human more execution capacity without removing them from the product loop.</p>
+        <p class="product-text reveal">The system handles mechanical implementation.</p>
+        <p class="product-text reveal">The human spends more time thinking about what the product should become.</p>
+      </div>
+    </section>
+
+    <!-- ========== THE EXPERIMENT ========== -->
+    <section class="section" id="experiment">
+      <div class="container">
+        <h2 class="section__title reveal">The Experiment</h2>
+        <p class="product-text reveal">AerOS Personal was used to develop three products:</p>
         <ul class="product-list">
-          <li class="reveal">NOT a compiled application</li>
-          <li class="reveal">NOT an LLM integration</li>
-          <li class="reveal">NOT an IDE plugin</li>
-          <li class="reveal">NOT dependent on any specific programming language, LLM, or execution environment</li>
+          <li class="reveal">two entirely personal projects;</li>
+          <li class="reveal">one project for professional work.</li>
         </ul>
+        <p class="product-text reveal">Each went from the initial product discussion through the complete development process in approximately two hours.</p>
+        <p class="product-text reveal">That speed changed what happened after the MVP existed.</p>
+        <p class="product-text reveal">Instead of spending most of the available time getting the first version built, there was considerably more room to refine the products once they were functional.</p>
+        <p class="product-text reveal">The additional capacity could be used for product improvements, strategic decisions, stakeholder-related work and other activities that would normally compete with implementation time.</p>
+        <p class="product-text reveal">The result wasn't simply faster development.</p>
+        <p class="product-text reveal">It was more time available for product thinking within the same development cycle.</p>
       </div>
     </section>
 
-    <!-- ========== SYSTEM STRUCTURE ========== -->
-    <section class="section" id="structure">
+    <!-- ========== WHAT BROKE ========== -->
+    <section class="section" id="what-broke">
       <div class="container">
-        <h2 class="section__title reveal">System Structure</h2>
-        <div class="product-text reveal" style="font-family: monospace; background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 8px; line-height: 1.8;">
-          <strong>AerOS-Personal/</strong><br>
-          ├── SYSTEM.md &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# System identity and invariants<br>
-          ├── BOOTSTRAP_CONTRACT.md &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Authoritative bootstrap specification<br>
-          ├── BOOTSTRAP_EXECUTION.md &nbsp;&nbsp;&nbsp;&nbsp;# Bootstrap execution procedure<br>
-          ├── README.md<br>
-          ├── CHANGELOG.md &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Version history<br>
-          ├── kernel/<br>
-          │&nbsp;&nbsp; ├── contracts/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Contract model definitions<br>
-          │&nbsp;&nbsp; ├── protocols/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Core protocols (orchestration, validation)<br>
-          │&nbsp;&nbsp; ├── policies/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# System policies<br>
-          │&nbsp;&nbsp; └── rules/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Validation and constraint rules<br>
-          ├── agents/<br>
-          │&nbsp;&nbsp; ├── product-manager/<br>
-          │&nbsp;&nbsp; │&nbsp;&nbsp; ├── agent.yaml<br>
-          │&nbsp;&nbsp; │&nbsp;&nbsp; ├── role.md<br>
-          │&nbsp;&nbsp; │&nbsp;&nbsp; └── instructions.md<br>
-          │&nbsp;&nbsp; ├── designer/<br>
-          │&nbsp;&nbsp; ├── developer/<br>
-          │&nbsp;&nbsp; └── qa/<br>
-          ├── validators/<br>
-          │&nbsp;&nbsp; ├── schema-validator/<br>
-          │&nbsp;&nbsp; ├── contract-validator/<br>
-          │&nbsp;&nbsp; └── acceptance-validator/<br>
-          ├── workflows/<br>
-          │&nbsp;&nbsp; └── product-development/<br>
-          │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ├── workflow.yaml<br>
-          │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; └── transitions.yaml<br>
-          ├── state/<br>
-          │&nbsp;&nbsp; └── event-log/<br>
-          │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; └── events.yaml<br>
-          ├── artifacts/<br>
-          │&nbsp;&nbsp; ├── change-requests/<br>
-          │&nbsp;&nbsp; ├── decision-requests/<br>
-          │&nbsp;&nbsp; ├── product-contract/<br>
-          │&nbsp;&nbsp; ├── design-contract/<br>
-          │&nbsp;&nbsp; ├── implementation/<br>
-          │&nbsp;&nbsp; └── validation-results/<br>
-          └── docs/<br>
-          &nbsp;&nbsp;&nbsp; ├── bootstrap-completion.md<br>
-          &nbsp;&nbsp;&nbsp; ├── system-validation.md<br>
-          &nbsp;&nbsp;&nbsp; ├── workflow-simulation.md<br>
-          &nbsp;&nbsp;&nbsp; ├── audit-report.md<br>
-          &nbsp;&nbsp;&nbsp; └── production-readiness.md
-        </div>
+        <h2 class="section__title reveal">What Broke</h2>
+        <p class="product-text reveal">The first implementation also exposed an important problem in agent boundaries.</p>
+        <p class="product-text reveal">In the first application, the Designer Agent continued beyond its intended responsibility and effectively took over the Developer role.</p>
+        <p class="product-text reveal">The system had not sufficiently constrained the boundary between the two agents.</p>
+        <p class="product-text reveal">The solution wasn't to add another conversational instruction.</p>
+        <p class="product-text reveal">The Designer's declaration was changed so that its responsibility ended definitively after producing the design contract.</p>
+        <p class="product-text reveal">This reinforced one of the principles already observed in Webeloper:</p>
+        <p class="statement reveal">Agent specialization only works when responsibilities are explicit and enforceable.</p>
+        <p class="product-text reveal">Another recurring behavior involved QA.</p>
+        <p class="product-text reveal">In three of the four developments observed across the broader AerOS experimentation, the Developer performed QA work itself when the human did not intervene.</p>
+        <p class="product-text reveal">The resulting behavior wasn't necessarily incorrect from a software-production perspective, but it violated the intended organizational structure of the system.</p>
+        <p class="product-text reveal">This distinction is important.</p>
+        <p class="product-text reveal">AerOS isn't merely trying to produce functioning software.</p>
+        <p class="product-text reveal">It is testing whether a structured team of specialized agents can preserve meaningful organizational boundaries while working autonomously.</p>
       </div>
     </section>
 
-    <!-- ========== STATUS ========== -->
-    <section class="section" id="status">
+    <!-- ========== CONTRACTS AS ORGANIZATIONAL INTERFACES ========== -->
+    <section class="section" id="contracts">
       <div class="container">
-        <h2 class="section__title reveal">Status</h2>
-        <div class="stats">
-          <div class="stat reveal">
-            <span class="stat__num">1.0.0</span>
-            <span class="stat__label">Version</span>
-          </div>
-          <div class="stat reveal">
-            <span class="stat__num">Production Ready</span>
-            <span class="stat__label">Phase</span>
-          </div>
-          <div class="stat reveal">
-            <span class="stat__num">2026-08-20</span>
-            <span class="stat__label">Date</span>
-          </div>
-        </div>
+        <h2 class="section__title reveal">Contracts as Organizational Interfaces</h2>
+        <p class="product-text reveal">Contracts play the same foundational role in AerOS that they do in Webeloper, but their meaning becomes even more apparent here.</p>
+        <p class="product-text reveal">A contract doesn't simply tell an agent what to do.</p>
+        <p class="product-text reveal">It defines the boundary between roles.</p>
+        <p class="product-text reveal">The PM produces the project definition.</p>
+        <p class="product-text reveal">The Designer produces the design definition.</p>
+        <p class="product-text reveal">The Developer produces the implementation.</p>
+        <p class="product-text reveal">QA evaluates the result.</p>
+        <p class="product-text reveal">This allows the system to reproduce something normally maintained through organizational coordination between people.</p>
+        <p class="product-text reveal">The contracts therefore act as interfaces between autonomous roles.</p>
+        <p class="product-text reveal">When an agent crosses one of those boundaries, the system can identify a structural problem rather than treating the entire workflow as an undifferentiated conversation.</p>
       </div>
     </section>
 
-    <!-- ========== GOVERNANCE ========== -->
-    <section class="section" id="governance">
+    <!-- ========== THE PRODUCTIVITY QUESTION ========== -->
+    <section class="section" id="productivity">
       <div class="container">
-        <h2 class="section__title reveal">Governance</h2>
-        <p class="product-text reveal">This system is governed by its own contracts. The execution environment (currently OpenCode) provides capabilities but has no authority over the system.</p>
-        <p class="product-text reveal" style="margin-top:1rem;"><strong>Authority hierarchy:</strong> Human → Orchestrator → Contract/Policy → Agent → Tools</p>
+        <h2 class="section__title reveal">The Productivity Question</h2>
+        <p class="product-text reveal">The initial results are encouraging, but they don't answer the central question.</p>
+        <p class="product-text reveal">Three products were developed in approximately two hours each.</p>
+        <p class="product-text reveal">That demonstrates that the system can compress the execution cycle for small products.</p>
+        <p class="product-text reveal">But faster execution introduces another problem.</p>
+        <p class="product-text reveal">If one person can produce several functional products in the time previously required to produce one, the limiting factor may move somewhere else.</p>
+        <ul class="product-list">
+          <li class="reveal">There are now more products to evaluate.</li>
+          <li class="reveal">More decisions to make.</li>
+          <li class="reveal">More possible directions to explore.</li>
+          <li class="reveal">More outputs competing for attention.</li>
+        </ul>
+        <p class="product-text reveal">The fundamental question becomes:</p>
+        <p class="statement statement--accent reveal">Does increasing execution capacity increase meaningful product exploration, or does it simply move the bottleneck from building to deciding?</p>
+        <p class="product-text reveal">AerOS Personal is designed to investigate that question rather than assume the answer.</p>
       </div>
     </section>
 
-    <!-- ========== FEATURES ========== -->
-    <section class="section" id="features">
+    <!-- ========== WHAT CHANGED FOR THE HUMAN ========== -->
+    <section class="section" id="human-change">
       <div class="container">
-        <h2 class="section__title reveal">Features</h2>
-        <div class="decisions">
-          <article class="decision reveal">
-            <span class="decision__num">01</span>
-            <h3 class="decision__title">Contract-Governed Execution</h3>
-            <p class="decision__meta">Versioned Contracts</p>
-            <p class="decision__text">All work governed by versioned contracts.</p>
-          </article>
-          <article class="decision reveal">
-            <span class="decision__num">02</span>
-            <h3 class="decision__title">Agent Non-Autonomy</h3>
-            <p class="decision__meta">Defined Roles</p>
-            <p class="decision__text">Agents execute within defined roles, no self-direction.</p>
-          </article>
-          <article class="decision reveal">
-            <span class="decision__num">03</span>
-            <h3 class="decision__title">Independent Validation</h3>
-            <p class="decision__meta">Schema · Contract · Acceptance</p>
-            <p class="decision__text">Schema, contract, and acceptance validation.</p>
-          </article>
-          <article class="decision reveal">
-            <span class="decision__num">04</span>
-            <h3 class="decision__title">Explicit Workflow</h3>
-            <p class="decision__meta">State Machine</p>
-            <p class="decision__text">State machine with Orchestrator-controlled transitions.</p>
-          </article>
-          <article class="decision reveal">
-            <span class="decision__num">05</span>
-            <h3 class="decision__title">Immutable Event Log</h3>
-            <p class="decision__meta">Full Audit Trail</p>
-            <p class="decision__text">Full audit trail for workflow reconstruction.</p>
-          </article>
-          <article class="decision reveal">
-            <span class="decision__num">06</span>
-            <h3 class="decision__title">Provenance Traceability</h3>
-            <p class="decision__meta">SOURCE · DERIVED · DECISION · UNKNOWN</p>
-            <p class="decision__text">SOURCE, DERIVED, DECISION, UNKNOWN tracking.</p>
-          </article>
-          <article class="decision reveal">
-            <span class="decision__num">07</span>
-            <h3 class="decision__title">Self-Construction</h3>
-            <p class="decision__meta">Self-Evolving</p>
-            <p class="decision__text">System evolves through same workflow it governs.</p>
-          </article>
-        </div>
+        <h2 class="section__title reveal">What Changed for the Human</h2>
+        <p class="product-text reveal">In practical use, the system produced a noticeable change in how time could be allocated.</p>
+        <p class="product-text reveal">Once the MVP was complete, more time could be spent improving the product rather than continuing to implement its basic functionality.</p>
+        <p class="product-text reveal">Mechanical development became something that could be delegated.</p>
+        <p class="product-text reveal">Product refinement, strategic thinking and communication remained human-led.</p>
+        <p class="product-text reveal">This created a different relationship with implementation:</p>
+        <p class="product-text reveal">The human no longer had to choose between building the product and thinking deeply about the product to the same extent.</p>
+        <p class="product-text reveal">The additional execution capacity created room for both.</p>
+        <p class="product-text reveal">That is the outcome AerOS Personal is ultimately interested in.</p>
+        <p class="product-text reveal">Not fewer humans.</p>
+        <p class="product-text reveal">Not fewer decisions.</p>
+        <p class="statement reveal">More human attention available for the decisions that matter.</p>
       </div>
     </section>
 
-    <!-- ========== AGENTS ========== -->
-    <section class="section" id="agents">
+    <!-- ========== WHAT WE LEARNED ========== -->
+    <section class="section" id="lessons">
       <div class="container">
-        <h2 class="section__title reveal">Agents</h2>
-        <div class="stats">
-          <div class="stat reveal">
-            <span class="stat__num">PM</span>
-            <span class="stat__label">product-manager — Transforms product intention into Product Contract</span>
-          </div>
-          <div class="stat reveal">
-            <span class="stat__num">UX</span>
-            <span class="stat__label">designer — Transforms Product Contract into Design Contract</span>
-          </div>
-          <div class="stat reveal">
-            <span class="stat__num">DEV</span>
-            <span class="stat__label">developer — Transforms contracts into implementation</span>
-          </div>
-          <div class="stat reveal">
-            <span class="stat__num">QA</span>
-            <span class="stat__label">qa — Validates implementation quality before release</span>
-          </div>
-        </div>
+        <h2 class="section__title reveal">What We Learned</h2>
+        <p class="product-text reveal">AerOS Personal reinforced several principles behind NDZ Labs' approach to agentic systems.</p>
+        <ol class="learnings">
+          <li class="learning reveal"><strong>1. An agentic team is different from a collection of agents.</strong> The value comes from defining responsibilities, boundaries and interactions between roles.</li>
+          <li class="learning reveal"><strong>2. Human involvement should happen where judgment matters.</strong> The PM conversation before development is as important as the implementation itself.</li>
+          <li class="learning reveal"><strong>3. Agents need enforceable boundaries.</strong> Without explicit termination conditions, specialized agents can naturally expand their role into adjacent responsibilities.</li>
+          <li class="learning reveal"><strong>4. Faster execution changes the bottleneck.</strong> When building becomes dramatically cheaper, deciding what deserves to be built becomes relatively more important.</li>
+          <li class="learning reveal"><strong>5. More execution capacity creates an abundance problem.</strong> The ability to build multiple products in parallel is useful only if humans can effectively evaluate and direct the resulting possibilities.</li>
+          <li class="learning reveal"><strong>6. AI augmentation isn't necessarily about reducing work.</strong> In this experiment, the main benefit came from reallocating human attention from mechanical execution toward product improvement, strategy and communication.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== WHAT'S NEXT ========== -->
+    <section class="section" id="next">
+      <div class="container">
+        <h2 class="section__title reveal">What's Next</h2>
+        <p class="product-text reveal">AerOS Personal is an ongoing experiment in human-directed product development.</p>
+        <p class="product-text reveal">The next iterations focus on improving role boundaries, making autonomous behavior more predictable and exploring how much parallel product work a human can effectively direct.</p>
+        <p class="product-text reveal">The larger AerOS project extends this investigation further.</p>
+        <p class="product-text reveal">The goal isn't to discover how many products an AI system can build.</p>
+        <p class="product-text reveal">It is to understand what happens to product development when execution stops being the primary constraint.</p>
+        <p class="product-text reveal">If a human can suddenly access the equivalent of several product teams, the problem is no longer simply:</p>
+        <p class="product-text reveal">How do we build this?</p>
+        <p class="product-text reveal">It becomes:</p>
+        <p class="statement statement--accent reveal">Which of the things we can now build are actually worth building?</p>
       </div>
     </section>
 
@@ -230,7 +327,7 @@
         <h2 class="cta__title reveal">Explore the System</h2>
         <p class="cta__text reveal">AerOS Personal is open source. Check the repo for the full system definition, contracts, agent configurations and documentation.</p>
         <div style="margin-top:2rem;">
-          <a href="https://github.com/franfernandz/aerospersonal" target="_blank" class="btn btn--ghost btn--large reveal">Github Link →</a>
+          <a href="https://github.com/franfernandz/aerospersonal" target="_blank" rel="noopener" class="btn btn--ghost btn--large reveal">Github Link →</a>
         </div>
       </div>
     </section>

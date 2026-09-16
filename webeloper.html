@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Webeloper — Multi-agent pipeline for client websites. From first sales message to finished demo.">
+  <meta name="description" content="Webeloper — an experiment in whether an agentic system can run the operational side of a web business while the human focuses on selling.">
   <title>Webeloper — NDZ Labs</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,15 +19,15 @@
     <nav class="nav container" aria-label="Main navigation">
       <a href="index.html" class="nav__logo">NDZ<span>Labs</span></a>
       <ul class="nav__links" id="navLinks">
-        <li><a href="#why">Why Webeloper?</a></li>
-        <li><a href="#what-you-get">What You Get</a></li>
-        <li><a href="#what-it-is-not">What It Is Not</a></li>
-        <li><a href="#how-it-works">How It Works</a></li>
-        <li><a href="#who-its-for">Who It's For</a></li>
-        <li><a href="#see-it">See It in Action</a></li>
-        <li><a href="#get-started">Get Started</a></li>
+        <li><a href="#premise">Premise</a></li>
+        <li><a href="#system">The System</a></li>
+        <li><a href="#why-contracts">Contracts</a></li>
+        <li><a href="#human-in-the-loop">Human in the Loop</a></li>
+        <li><a href="#where-it-breaks">Where It Breaks</a></li>
+        <li><a href="#lessons">What We Learned</a></li>
+        <li><a href="#next">What's Next</a></li>
       </ul>
-      <a href="#get-started" class="nav__cta btn btn--cta">Get Started</a>
+      <a href="https://github.com/franfernandz/webeloper" target="_blank" rel="noopener" class="nav__cta btn">Github →</a>
       <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
@@ -39,204 +39,260 @@
     <!-- ========== PRODUCT HERO ========== -->
     <section class="product-hero">
       <div class="container">
-        <p class="product-hero__eyebrow reveal">NDZ DEVELOPMENT SYSTEM · OPEN SOURCE</p>
+        <p class="product-hero__eyebrow reveal">NDZ LABS · EXPERIMENT · OPEN SOURCE</p>
         <h1 class="product-hero__title reveal">Webeloper</h1>
-        <p class="product-hero__subtitle reveal">A multi-agent work process with three AI agents, two contract documents, and one pipeline — Sales → Design → Build. From the first sales message to a finished demo, with clear roles, clear contracts, and you in control at every step.</p>
+        <p class="product-hero__subtitle reveal">Can an AI system run the operational side of a web business while the human focuses on selling?</p>
       </div>
     </section>
 
-    <!-- ========== WHY ========== -->
-    <section class="section" id="why">
+    <!-- ========== THE PREMISE ========== -->
+    <section class="section" id="premise">
       <div class="container">
-        <h2 class="section__title reveal">Why Webeloper?</h2>
-        <p class="product-text reveal">If you build websites for clients — as a freelancer, an agency, or someone who uses AI to move faster — you already know how it usually goes:</p>
-        <ul class="product-list">
-          <li class="reveal">Sales conversations live in scattered chats and get lost the moment you switch to building.</li>
-          <li class="reveal">The handoff between "what the client wants" and "what gets built" is where context dies.</li>
-          <li class="reveal">AI agents help, but without guardrails they invent facts, go off-brief, and produce generic results.</li>
-          <li class="reveal">Every project feels like starting from zero. There is no process. Just vibes and luck.</li>
-        </ul>
-        <p class="product-text reveal">Webeloper fixes that. It gives you a repeatable process for the whole lifecycle of a client website — from the first sales message to a finished demo — with clear roles, clear contracts, and you in control at every step.</p>
+        <h2 class="section__title reveal">The Premise</h2>
+        <p class="product-text reveal">Most people who can sell a website cannot build one.</p>
+        <p class="product-text reveal">Most people who can build one cannot easily handle the entire process of finding prospects, understanding their needs, designing a solution, developing it and delivering it.</p>
+        <p class="product-text reveal">Webeloper explores whether an agentic system can close that gap.</p>
+        <p class="product-text reveal">The experiment was simple: could someone with no web-development skills run the complete sales and delivery cycle of a website business?</p>
+        <p class="product-text reveal">The human would choose the market and make the sale.</p>
+        <p class="product-text reveal">The system would handle everything in between.</p>
       </div>
     </section>
 
-    <!-- ========== WHAT YOU GET ========== -->
-    <section class="section" id="what-you-get">
+    <!-- ========== THE HYPOTHESIS ========== -->
+    <section class="section" id="hypothesis">
       <div class="container">
-        <h2 class="section__title reveal">What You Get</h2>
-        <div class="decisions">
-          <article class="decision reveal">
-            <span class="decision__num">01</span>
-            <h3 class="decision__title">A Real Process, Not a Wildcard</h3>
-            <p class="decision__meta">Defined Roles & Contracts</p>
-            <p class="decision__text">Every stage has a defined agent and a contract that works as the source of truth for that stage. No more chaos between "we talked" and "we deliver".</p>
-          </article>
-          <article class="decision reveal">
-            <span class="decision__num">02</span>
-            <h3 class="decision__title">Context That Survives</h3>
-            <p class="decision__meta">Nothing Gets Lost</p>
-            <p class="decision__text">Commercial context is captured in the sales-contract.md, handed off to design, and turned into a complete project-contract.md — nothing gets lost between stages.</p>
-          </article>
-          <article class="decision reveal">
-            <span class="decision__num">03</span>
-            <h3 class="decision__title">You Stay in Control</h3>
-            <p class="decision__meta">Human Supervision</p>
-            <p class="decision__text">Agents research, qualify and draft communications, but they never perform external outreach without human approval. Facts must be verifiable, and hypotheses remain explicitly hypotheses.</p>
-          </article>
-          <article class="decision reveal">
-            <span class="decision__num">04</span>
-            <h3 class="decision__title">Less Rework, Faster Demos</h3>
-            <p class="decision__meta">Build It Right the First Time</p>
-            <p class="decision__text">The designer produces a spec detailed enough that the developer builds it right the first time. You skip the "that's not what I meant" loop.</p>
-          </article>
-          <article class="decision reveal">
-            <span class="decision__num">05</span>
-            <h3 class="decision__title">Not Another Template Site</h3>
-            <p class="decision__meta">Conversion-First</p>
-            <p class="decision__text">The system is conversion-first: every website defines a clear primary conversion and is designed for the specific business. Your demos feel intentional, not generic.</p>
-          </article>
-          <article class="decision reveal">
-            <span class="decision__num">06</span>
-            <h3 class="decision__title">Works With Tools You Already Use</h3>
-            <p class="decision__meta">Open Source · MIT</p>
-            <p class="decision__text">Runs on opencode — no enterprise stack, no license fees, no vendor lock-in. Open source under MIT.</p>
-          </article>
+        <h2 class="section__title reveal">The Hypothesis</h2>
+        <p class="product-text reveal">Webeloper started from a broader hypothesis:</p>
+        <p class="statement reveal">AI agents should take responsibility for the mechanical parts of a workflow while humans remain responsible for the decisions where context, judgment and agency matter most.</p>
+        <p class="product-text reveal">For a website business, that meant separating the workflow into three specialized roles:</p>
+        <div class="roles-flow reveal">
+          <span class="rd-loop__step">Seller</span>
+          <span class="roles-flow__arrow" aria-hidden="true">→</span>
+          <span class="rd-loop__step">Designer</span>
+          <span class="roles-flow__arrow" aria-hidden="true">→</span>
+          <span class="rd-loop__step rd-loop__step--speed">Developer</span>
         </div>
+        <p class="product-text reveal">Rather than building a single general-purpose agent, each agent receives a specific responsibility and a structured contract describing what the next stage needs to accomplish.</p>
       </div>
     </section>
 
-    <!-- ========== WHAT IT IS NOT ========== -->
-    <section class="section" id="what-it-is-not">
+    <!-- ========== THE SYSTEM ========== -->
+    <section class="section" id="system">
       <div class="container">
-        <h2 class="section__title reveal">What Webeloper Is Not</h2>
-        <ul class="product-list">
-          <li class="reveal">An automatic website generator</li>
-          <li class="reveal">A chatbot that replaces an agency</li>
-          <li class="reveal">A web framework</li>
-          <li class="reveal">A system that decides for you</li>
-          <li class="reveal">A set of prompts to copy and paste</li>
-        </ul>
-        <p class="product-text reveal">It is a multi-agent work process with defined roles, explicit contracts and human supervision.</p>
-      </div>
-    </section>
+        <h2 class="section__title reveal">The System</h2>
+        <p class="product-text reveal">The workflow begins with a human choosing a niche.</p>
+        <p class="product-text reveal">The Seller Agent researches potential customers, analyzes their online presence and prioritizes prospects. For each opportunity, it creates a Project Contract describing the prospect, the opportunity and the characteristics the website should address.</p>
+        <p class="product-text reveal">The Designer Agent consumes that contract and translates it into a Design Contract: a structured description of what needs to be designed and how the website should respond to the prospect's needs.</p>
+        <p class="product-text reveal">The Developer Agent then turns that contract into a functional website.</p>
+        <p class="product-text reveal">The resulting workflow is:</p>
 
-    <!-- ========== HOW IT WORKS ========== -->
-    <section class="section" id="how-it-works">
-      <div class="container">
-        <h2 class="section__title reveal">How It Works</h2>
-        <div class="stats">
-          <div class="stat reveal">
-            <span class="stat__num">3</span>
-            <span class="stat__label">AI Agents</span>
+        <div class="workflow reveal">
+          <div class="system-stage">
+            <div class="system-stage__head">
+              <span class="system-stage__num">HUMAN</span>
+              <h3 class="system-stage__title">Human</h3>
+            </div>
+            <p class="system-stage__text">Chooses the niche</p>
           </div>
-          <div class="stat reveal">
-            <span class="stat__num">2</span>
-            <span class="stat__label">Contract Documents</span>
+          <span class="system-flow__arrow" aria-hidden="true">↓</span>
+
+          <div class="system-stage">
+            <div class="system-stage__head">
+              <span class="system-stage__num">AGENT</span>
+              <h3 class="system-stage__title">Seller Agent</h3>
+            </div>
+            <p class="system-stage__text">Researches and prioritizes prospects</p>
           </div>
-          <div class="stat reveal">
-            <span class="stat__num">1</span>
-            <span class="stat__label">Pipeline</span>
+          <span class="system-flow__arrow" aria-hidden="true">↓</span>
+
+          <div class="system-stage">
+            <div class="system-stage__head">
+              <span class="system-stage__num">CONTRACT</span>
+              <h3 class="system-stage__title">Project Contract</h3>
+            </div>
+            <p class="system-stage__text">Defines the opportunity</p>
+          </div>
+          <span class="system-flow__arrow" aria-hidden="true">↓</span>
+
+          <div class="system-stage">
+            <div class="system-stage__head">
+              <span class="system-stage__num">AGENT</span>
+              <h3 class="system-stage__title">Designer Agent</h3>
+            </div>
+            <p class="system-stage__text">Translates requirements into a design specification</p>
+          </div>
+          <span class="system-flow__arrow" aria-hidden="true">↓</span>
+
+          <div class="system-stage">
+            <div class="system-stage__head">
+              <span class="system-stage__num">CONTRACT</span>
+              <h3 class="system-stage__title">Design Contract</h3>
+            </div>
+            <p class="system-stage__text">Defines the implementation requirements</p>
+          </div>
+          <span class="system-flow__arrow" aria-hidden="true">↓</span>
+
+          <div class="system-stage">
+            <div class="system-stage__head">
+              <span class="system-stage__num">AGENT</span>
+              <h3 class="system-stage__title">Developer Agent</h3>
+            </div>
+            <p class="system-stage__text">Builds the website</p>
+          </div>
+          <span class="system-flow__arrow" aria-hidden="true">↓</span>
+
+          <div class="system-stage system-stage--final">
+            <div class="system-stage__head">
+              <span class="system-stage__num">OUTCOME</span>
+              <h3 class="system-stage__title">Demo → Sale → Final website</h3>
+            </div>
+            <p class="system-stage__text">The first version is a demo site, designed to support the sales process. If the prospect becomes a customer, the system can continue toward the final website.</p>
           </div>
         </div>
-        <p class="product-text reveal" style="text-align:center; margin-top:2rem;">
-          <strong>Prospect Discovery → Sales Agent (sales-contract) → Designer Agent (project-contract.md) → Developer Agent → Website (Demo)</strong>
-        </p>
-        <ul class="product-list" style="margin-top:2rem;">
-          <li class="reveal"><strong>Sales Agent</strong> researches and qualifies prospects, and keeps a sales-contract.md for each one.</li>
-          <li class="reveal">When a prospect asks for a demo, the <strong>Sales Agent</strong> writes a <strong>Design Handoff</strong> — business context, not UI decisions.</li>
-          <li class="reveal"><strong>Designer Agent</strong> reads the handoff and produces project-contract.md, a complete, build-ready specification.</li>
-          <li class="reveal"><strong>Developer Agent</strong> builds the functional website from that contract — the single source of truth for the design.</li>
-        </ul>
+
+        <p class="product-text reveal" style="margin-top: 3rem;">The human remains in the loop where the system benefits from human judgment, while the agents handle the execution between those decisions.</p>
       </div>
     </section>
 
-    <!-- ========== WHO IT'S FOR ========== -->
-    <section class="section" id="who-its-for">
+    <!-- ========== WHY CONTRACTS MATTER ========== -->
+    <section class="section" id="why-contracts">
       <div class="container">
-        <h2 class="section__title reveal">Who It's For</h2>
+        <h2 class="section__title reveal">Why Contracts Matter</h2>
+        <p class="product-text reveal">One of the central architectural decisions in Webeloper is the use of contracts as interfaces between agents.</p>
+        <p class="product-text reveal">The agents don't simply pass conversational context from one stage to another.</p>
+        <p class="product-text reveal">Instead, each stage produces a structured artifact that explicitly defines what the next agent needs to do.</p>
+        <p class="product-text reveal">This serves several purposes.</p>
+        <p class="product-text reveal">Contracts give each agent clear and specific instructions, reduce ambiguity between stages and provide a mechanism for constraining the agent's behavior.</p>
+        <p class="product-text reveal">They also reduce the amount of orchestration the human needs to perform. Instead of manually explaining to each agent what happened previously and what should happen next, the workflow itself defines those responsibilities.</p>
+        <p class="product-text reveal">For Webeloper, this became an important lesson:</p>
+        <p class="statement reveal">Agentic systems need interfaces, not just conversations.</p>
+      </div>
+    </section>
+
+    <!-- ========== KEEPING THE HUMAN IN THE RIGHT PLACE ========== -->
+    <section class="section" id="human-in-the-loop">
+      <div class="container">
+        <h2 class="section__title reveal">Keeping the Human in the Right Place</h2>
+        <p class="product-text reveal">The initial version of Webeloper tried to automate more of the workflow.</p>
+        <p class="product-text reveal">That included letting the Seller Agent generate the final cold-outreach message.</p>
+        <p class="product-text reveal">In practice, this created a problem.</p>
+        <p class="product-text reveal">The generated messages were often generic, sometimes overly aggressive, and did not adequately account for considerations such as terms that could increase the likelihood of being interpreted as spam.</p>
+        <p class="product-text reveal">The solution wasn't simply to improve the prompt.</p>
+        <p class="product-text reveal">Instead, the responsibility was redesigned.</p>
+        <p class="product-text reveal">The Seller no longer makes the final decision about the outreach message. It proposes a message skeleton, while the human decides whether and how to use it.</p>
+        <p class="product-text reveal">This reflects a broader principle emerging from the experiment:</p>
+        <p class="statement reveal">Autonomy should be assigned according to the cost of being wrong, not simply according to whether a task can technically be automated.</p>
+        <p class="product-text reveal">The same principle is being applied to the design stage. Future versions will allow the human to define selected aspects of the website's design system while leaving the agent responsible for implementation.</p>
+      </div>
+    </section>
+
+    <!-- ========== WHERE THE SYSTEM BREAKS ========== -->
+    <section class="section" id="where-it-breaks">
+      <div class="container">
+        <h2 class="section__title reveal">Where the System Breaks</h2>
+        <p class="product-text reveal">Webeloper also exposed several failure modes.</p>
+
+        <article class="breakdown reveal">
+          <h3 class="breakdown__title">Prospect discovery</h3>
+          <p class="product-text">The Seller relies heavily on information found through Google.</p>
+          <p class="product-text">That creates a straightforward problem: the system can be wrong about who a prospect is or what their business currently does.</p>
+          <p class="product-text">A planned improvement uses the prospect's contact email as an additional search criterion, allowing the system to check whether the same organization appears to operate under another domain.</p>
+          <p class="product-text">The objective isn't to make the agent infallible.</p>
+          <p class="product-text">It is to introduce additional verification before an assumption becomes part of the workflow.</p>
+        </article>
+
+        <article class="breakdown reveal">
+          <h3 class="breakdown__title">AI-generated design</h3>
+          <p class="product-text">One of the more unexpected problems appeared between the Seller and Designer.</p>
+          <p class="product-text">A technically correct contract could still result in a website that looked like generic AI-generated UI: familiar layouts, excessive visual patterns and the aesthetic commonly associated with AI-generated websites.</p>
+          <p class="product-text">The system was fulfilling the specification while failing at a higher-level design objective.</p>
+          <p class="product-text">This led to another important distinction:</p>
+          <p class="product-text thesis__text--emphasis">Following the requirements is not the same as producing a good result.</p>
+          <p class="product-text">A forthcoming system update introduces a dedicated skill that explicitly discourages this style of design and establishes a different default for the Designer.</p>
+        </article>
+
+        <article class="breakdown reveal">
+          <h3 class="breakdown__title">Repetition in development</h3>
+          <p class="product-text">The Developer Agent can also begin repeating structures and implementation patterns after building several consecutive websites.</p>
+          <p class="product-text">This is another example of a system that technically works while its output quality degrades through repetition.</p>
+          <p class="product-text">Currently, this can be corrected through additional requests. A future version aims to address it through dedicated skills.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== DEFINING "GOOD" ========== -->
+    <section class="section" id="defining-good">
+      <div class="container">
+        <h2 class="section__title reveal">Defining "good"</h2>
+        <p class="product-text reveal">Webeloper deliberately uses a relatively strict definition of a successful website.</p>
+        <p class="product-text reveal">A site isn't considered successful simply because an agent generated code that renders in a browser.</p>
+        <p class="product-text reveal">It needs to:</p>
         <ul class="product-list">
-          <li class="reveal"><strong>Freelancers</strong> who want to look like a team and stop reinventing the process on every project.</li>
-          <li class="reveal"><strong>Agencies</strong> that need consistent handoffs between sales, design and delivery.</li>
-          <li class="reveal"><strong>AI users</strong> who want to generate websites with guardrails instead of chaos.</li>
+          <li class="reveal">satisfy the requirements established by the contract;</li>
+          <li class="reveal">be fully functional;</li>
+          <li class="reveal">work responsively;</li>
+          <li class="reveal">implement the requested interactions correctly;</li>
+          <li class="reveal">avoid functional errors.</li>
         </ul>
+        <p class="product-text reveal" style="margin-top: 2rem;">This distinction matters because Webeloper isn't testing whether an LLM can generate a website.</p>
+        <p class="product-text reveal">It is testing whether a system can reliably deliver a usable artifact as part of a larger workflow.</p>
       </div>
     </section>
 
-    <!-- ========== SEE IT IN ACTION ========== -->
-    <section class="section" id="see-it">
+    <!-- ========== A REAL-WORLD TEST ========== -->
+    <section class="section" id="real-world-test">
       <div class="container">
-        <h2 class="section__title reveal">See It in Action</h2>
-        <p class="product-text reveal">The Sales Agent is designed around real conversational commands. A session can look like this:</p>
-        <div class="decisions">
-          <article class="decision reveal">
-            <span class="decision__num">→</span>
-            <h3 class="decision__title">you: find 10 gyms in Buenos Aires</h3>
-            <p class="decision__meta">Prospect Discovery</p>
-            <p class="decision__text">Agent discovers, researches and qualifies prospects, ranked with reasoning.</p>
-          </article>
-          <article class="decision reveal">
-            <span class="decision__num">→</span>
-            <h3 class="decision__title">you: let's work on prospect #02</h3>
-            <p class="decision__meta">Sales Contract</p>
-            <p class="decision__text">Agent prepares its sales-contract.md and Design Handoff.</p>
-          </article>
-          <article class="decision reveal">
-            <span class="decision__num">→</span>
-            <h3 class="decision__title">you: contact prospect #02</h3>
-            <p class="decision__meta">Outreach</p>
-            <p class="decision__text">Agent drafts the outreach message for your approval.</p>
-          </article>
-          <article class="decision reveal">
-            <span class="decision__num">→</span>
-            <h3 class="decision__title">you: prospect #02 wants to see the site</h3>
-            <p class="decision__meta">Demo Requested</p>
-            <p class="decision__text">Agent updates the status to demo_requested and completes the Design Handoff. Then the Designer Agent turns that handoff into project-contract.md, and the Developer Agent builds the demo.</p>
-          </article>
-        </div>
-        <p class="product-text reveal" style="margin-top:2rem; text-align:center;"><em>From "does someone want a website?" to "here's your website" — one pipeline, no context lost.</em></p>
+        <h2 class="section__title reveal">A Real-World Test</h2>
+        <p class="product-text reveal">The experiment eventually moved beyond the controlled development environment.</p>
+        <p class="product-text reveal">A person who discovered Webeloper through LinkedIn decided to try the system because they needed to generate income.</p>
+        <p class="product-text reveal">They selected four different niches.</p>
+        <p class="product-text reveal">For each niche, Webeloper identified three prospects. The human handled the actual sales conversations while the system generated the demo websites and, according to the user's report, the final websites after sales.</p>
+        <p class="product-text reveal">Within three weeks, the user reported having sold four websites.</p>
+        <p class="product-text reveal">The user has not authorized NDZ Labs to disclose their name, LinkedIn profile or employer, so the result is presented anonymously.</p>
+        <p class="product-text reveal">This is not treated as statistical validation of the system. It is an early real-world signal that the workflow can support someone without web-development expertise through an actual commercial process.</p>
       </div>
     </section>
 
-    <!-- ========== GET STARTED ========== -->
-    <section class="section" id="get-started">
+    <!-- ========== WHAT WEBELOPER CAN — AND CANNOT — DO ========== -->
+    <section class="section" id="capabilities">
       <div class="container">
-        <h2 class="section__title reveal">Get Started in 3 Steps</h2>
-        <p class="product-text reveal">Requires opencode (or any runtime that supports markdown agent definitions).</p>
-        <div class="decisions">
-          <article class="decision reveal">
-            <span class="decision__num">01</span>
-            <h3 class="decision__title">Install the agents</h3>
-            <p class="decision__text"><code>mkdir -p .opencode/agents<br>cp Agents/*.md .opencode/agents/</code></p>
-          </article>
-          <article class="decision reveal">
-            <span class="decision__num">02</span>
-            <h3 class="decision__title">Copy the contract templates</h3>
-            <p class="decision__text"><code>cp Contracts/sales-contract.md .<br>cp Contracts/project-contract.md .</code></p>
-          </article>
-          <article class="decision reveal">
-            <span class="decision__num">03</span>
-            <h3 class="decision__title">Open opencode and start</h3>
-            <p class="decision__text">Pick a prospect, research it with the Sales Agent, and let the pipeline do the rest. The agents are designed so that you never have to hand-hold the process.</p>
-          </article>
-        </div>
+        <h2 class="section__title reveal">What Webeloper can — and cannot — do</h2>
+        <p class="product-text reveal">The current system is designed around relatively straightforward websites.</p>
+        <p class="product-text reveal">It has not been sufficiently tested with complex products such as e-commerce platforms or CMS-driven applications, so those capabilities are not claimed.</p>
+        <p class="product-text reveal">This limitation is part of the experiment rather than something to hide.</p>
+        <p class="product-text reveal">The next iteration focuses on expanding the Developer's capabilities through specialized skills, including the ability to work with technologies such as PHP and React while remaining conscious of token consumption and implementation efficiency.</p>
+        <p class="product-text reveal">The objective isn't simply to give the agent more capabilities.</p>
+        <p class="product-text reveal">It is to make those capabilities available when they are actually necessary.</p>
       </div>
     </section>
 
-    <!-- ========== PROJECT LAYOUT ========== -->
-    <section class="section">
+    <!-- ========== WHAT WE LEARNED ========== -->
+    <section class="section" id="lessons">
       <div class="container">
-        <h2 class="section__title reveal">Project Layout</h2>
-        <div class="product-text reveal" style="font-family: monospace; background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 8px; line-height: 1.8;">
-          <strong>Webeloper/</strong><br>
-          ├── Agents/<br>
-          │&nbsp;&nbsp; ├── sales-agent.md &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Prospects & sells → maintains sales-contract.md<br>
-          │&nbsp;&nbsp; ├── designer-agent.md &nbsp;&nbsp;# Designs websites → writes project-contract.md<br>
-          │&nbsp;&nbsp; └── developer-agent.md &nbsp;# Builds websites from project-contract.md<br>
-          ├── Contracts/<br>
-          │&nbsp;&nbsp; ├── sales-contract.md &nbsp;&nbsp;# Commercial spec template (Sales's output)<br>
-          │&nbsp;&nbsp; └── project-contract.md # Implementation spec template (Designer's output)<br>
-          └── logo.png &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Project logo
-        </div>
+        <h2 class="section__title reveal">What We Learned</h2>
+        <p class="product-text reveal">Webeloper started as an experiment in automating website development.</p>
+        <p class="product-text reveal">It became an experiment in how autonomy should be designed.</p>
+        <p class="product-text reveal">The most important lessons so far have been:</p>
+        <ol class="learnings">
+          <li class="learning reveal"><strong>1. Agents need explicit boundaries.</strong> Giving an agent a task doesn't mean it should own every decision related to that task.</li>
+          <li class="learning reveal"><strong>2. Contracts can act as coordination infrastructure.</strong> Structured handoffs reduce ambiguity and minimize the need for humans to orchestrate every step.</li>
+          <li class="learning reveal"><strong>3. Automation changes the location of the bottleneck.</strong> When execution becomes cheap, verification, quality control and judgment become more important.</li>
+          <li class="learning reveal"><strong>4. More autonomy isn't necessarily better.</strong> The Seller generating outreach messages was technically possible. Giving it the final decision wasn't necessarily the right system design.</li>
+          <li class="learning reveal"><strong>5. Output quality requires explicit evaluation criteria.</strong> A website can satisfy a prompt and still be poor. Functional correctness, responsiveness and adherence to the contract need to be treated as requirements of the system.</li>
+          <li class="learning reveal"><strong>6. Skills provide a mechanism for evolving the system.</strong> Instead of continuously increasing the complexity of the core orchestration, new behaviors can be introduced as specialized skills that modify how individual agents operate.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== WHAT'S NEXT ========== -->
+    <section class="section" id="next">
+      <div class="container">
+        <h2 class="section__title reveal">What's Next</h2>
+        <p class="product-text reveal">Webeloper is still an experiment.</p>
+        <p class="product-text reveal">The next iterations focus on improving verification during prospect discovery, preventing repetitive implementation patterns, reducing AI-generated design conventions and expanding the Developer's ability to handle more complex web applications.</p>
+        <p class="product-text reveal">But the larger question remains unchanged:</p>
+        <p class="statement statement--accent reveal">How much of a workflow can an agentic system own before autonomy stops helping the human and starts getting in their way?</p>
+        <p class="product-text reveal">Webeloper is one attempt to find that boundary.</p>
       </div>
     </section>
 
@@ -245,7 +301,7 @@
       <div class="container cta">
         <p class="cta__text reveal" style="margin-top:1.5rem; font-size:0.9rem;">MIT — use it, share it, build on it. Ideas, improvements and pull requests are welcome.</p>
         <div style="margin-top:2rem;">
-          <a href="https://github.com/franfernandz/webeloper" target="_blank" class="btn btn--ghost btn--large reveal">Github Link →</a>
+          <a href="https://github.com/franfernandz/webeloper" target="_blank" rel="noopener" class="btn btn--ghost btn--large reveal">Github Link →</a>
         </div>
       </div>
     </section>

@@ -16,6 +16,7 @@
       toggle.classList.toggle("is-open", open);
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
       toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      if (header) header.classList.toggle("is-scrolled", open || window.scrollY > 8);
     });
 
     links.addEventListener("click", function (e) {
@@ -24,6 +25,7 @@
         toggle.classList.remove("is-open");
         toggle.setAttribute("aria-expanded", "false");
         toggle.setAttribute("aria-label", "Open menu");
+        if (header) header.classList.toggle("is-scrolled", window.scrollY > 8);
       }
     });
   }
@@ -34,7 +36,8 @@
 
   function onScroll() {
     var y = window.scrollY;
-    if (header) header.classList.toggle("is-scrolled", y > 8);
+    var menuOpen = links && links.classList.contains("is-open");
+    if (header) header.classList.toggle("is-scrolled", menuOpen || y > 8);
     ticking = false;
   }
 
