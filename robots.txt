@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ndzvisual.github.io/ndzlabs/sitemap.xml
+Sitemap: https://ndzlabs.vercel.app/sitemap.xml
