@@ -360,6 +360,26 @@ h1, h2, h3 {
   gap: 1rem;
 }
 
+/* ---------- 404 ---------- */
+.error-hero__title {
+  font-size: clamp(6rem, 24vw, 12rem);
+  line-height: 1;
+  color: var(--header);
+  text-shadow: 0 0 40px rgba(247, 37, 133, 0.35);
+  margin-bottom: 1rem;
+  animation: error-glow 3.5s ease-in-out infinite;
+}
+
+@keyframes error-glow {
+  0%,
+  100% {
+    text-shadow: 0 0 40px rgba(247, 37, 133, 0.35);
+  }
+  50% {
+    text-shadow: 0 0 90px rgba(247, 37, 133, 0.6);
+  }
+}
+
 /* ---------- Scroll reveal ---------- */
 .js .reveal {
   opacity: 0;
